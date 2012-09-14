@@ -83,35 +83,21 @@
         </developer>
     </developers>
 
-    <scm>
-        <connection>scm:svn:https://source.sakaiproject.org/contrib/mailsender/branches/1.6</connection>
-        <developerConnection>scm:svn:https://source.sakaiproject.org/contrib/mailsender/branches/1.6</developerConnection>
-        <url>https://source.sakaiproject.org/contrib/mailsender/branches/1.6</url>
-    </scm>
+
+        <scm>
+                <connection>scm:git:git://git-repo.oucs.ox.ac.uk/git/repos/local-version/sakai/mailsender.git</connection>
+                <developerConnection>scm:git:ssh://git-repo.oucs.ox.ac.uk/~git/repos/local-version/sakai/mailsender.git</developerConnection>
+        </scm>
 
     <distributionManagement>
-        <downloadUrl>http://source.sakaiproject.org/maven2/</downloadUrl>
-        <snapshotRepository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>sakai-maven-snapshots-scp</id>
-            <name>Sakai snapshot Repo</name>
-            <url>scp://source.sakaiproject.org/var/www/html/maven2-snapshots</url>
-            <layout>default</layout>
-        </snapshotRepository>
         <repository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>sakai-maven2-scp</id>
-            <name>Sakai maven2 repository</name>
-            <url>scp://source.sakaiproject.org/var/www/html/maven2</url>
-            <layout>default</layout>
+            <id>maven-repo.oucs</id>
+            <url>https://maven-repo.oucs.ox.ac.uk/content/repositories/releases</url>
         </repository>
-        <site>
-            <id>sakai-site</id>
-            <name>Sakai release Site</name>
-            <url>${url.localsite}</url>
-        </site>
+            <id>maven-repo.oucs</id>
+            <url>https://maven-repo.oucs.ox.ac.uk/content/repositories/snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
-
     <pluginRepositories>
         <pluginRepository>
             <id>Sakai Plugin Repo</id>
